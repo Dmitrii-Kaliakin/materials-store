@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { CustomButton } from "../../components/сustom-button";
 import "./styles.css";
@@ -31,6 +29,7 @@ export function CalculatorPage() {
           id="iframe"
           name="iframe"
           src="https://stroy-calc.ru/widj?str=raschet-lentochnogo-fundamenta&bgcol=#fff&tcol=000&elcol=ec7000&dis=none"
+          title="Calculator Widget"
           width="100%"
           height="1200vh"
           frameBorder="0"

@@ -1,5 +1,4 @@
-import React from "react";
-import { Typography, Link, Toolbar, Grid, Box } from "@mui/material";
+import { Typography, Toolbar, Grid, Box } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import "./styles.css";

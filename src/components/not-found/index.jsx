@@ -1,5 +1,4 @@
 import { ReactComponent as NotFoundIcon } from "./img/ic-notfound.svg";
-import { Link } from "react-router-dom";
 import s from "./styles.module.css";
 
 export function NotFound({ children, title, buttonText = "На главную" }) {
