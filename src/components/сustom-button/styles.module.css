@@ -1,0 +1,31 @@
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+.button.primary {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+.button.secondary {
+  background-color: #f50057;
+  color: #fff;
+}
+
+.customButton {
+  border-radius: 16px;
+}
+
+.customButtonLink {
+  text-decoration: none;
+}

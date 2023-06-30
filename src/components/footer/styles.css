@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: #1976d2;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  position: static;
+  margin-top: auto;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section:last-child {
+  margin-bottom: 0;
+}
+
+.footer-link {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.social-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-link {
+  color: #fff;
+  margin-left: 10px;
+}

@@ -1,0 +1,131 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+
+.contact-page__container {
+  background-color: #e2e6eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 800px;
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 130px;
+}
+
+.contact-page__header-container {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contact-page__content-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-page__details {
+  flex: 1;
+  margin-right: 24px;
+}
+
+.contact-page__qr-code-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: 24px;
+}
+
+.contact-page__qr-code-image {
+  width: 200px;
+  height: 200px;
+}
+
+.contact-page__map-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-page__title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.contact-page__details h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-page__details p {
+  margin: 8px 0;
+}
+
+.contact-page__messenger-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.contact-page__messenger-icons a {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.contact-page__messenger-icons a svg {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-page__whatsapp-icon {
+  color: #4ac959;
+}
+
+.contact-page__telegram-icon {
+  color: #0088cc;
+}
+
+.contact-page__button-container {
+  background-color: #ffffff;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+.contact-page__home-button {
+  color: #1976d2;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 767px) {
+  .contact-page__container {
+    width: 100%;
+  }
+
+  .contact-page__content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-page__qr-code-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+
+  .contact-page__qr-code-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contact-page__map-container {
+    margin-top: 24px;
+  }
+}
