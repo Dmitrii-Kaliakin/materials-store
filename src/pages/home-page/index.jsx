@@ -1,6 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles.css";
 import StarIcon from "@mui/icons-material/Star";
+import armaturaImage from "./img/armatura.jpg";
+import betonImage from "./img/beton.jpg";
+import doskaImage from "./img/doska.jpg";
+import pesokImage from "./img/pesok.jpg";
+import setkaImage from "./img/setka.jpg";
+import shebenImage from "./img/sheben.jpg";
+import respectImage from "./img/respect.png";
 
 export function HomePage() {
   const [counter, setCounter] = useState(0);
@@ -43,10 +50,10 @@ export function HomePage() {
   return (
     <div className="home-page-container">
       <div className="banner">
-        <h2 className="banner-heading">
+        <h2 className="banner__heading">
           Строительные материалы высокого качества
         </h2>
-        <p className="banner-text">
+        <p className="banner__text">
           Создайте надежный фундамент для вашего дома с нашими материалами
         </p>
       </div>
@@ -72,7 +79,7 @@ export function HomePage() {
         <div className="image-row">
           <div className="image-block">
             <img
-              src="https://proton-zavod.ru/wp-content/uploads/2020/05/db77379b1528e4dd5a222d1fbecbc0f6-459x240.jpg"
+              src={doskaImage}
               alt="Доска для опалубки"
               className="image-block__image"
             />
@@ -83,7 +90,7 @@ export function HomePage() {
           </div>
           <div className="image-block">
             <img
-              src="https://city-met.ru/images/%D1%81%D1%82%D0%B0%D1%82%D1%8C%D0%B8/metalprfilarm.jpg"
+              src={armaturaImage}
               alt="Арматура"
               className="image-block__image"
             />
@@ -93,11 +100,7 @@ export function HomePage() {
             </p>
           </div>
           <div className="image-block">
-            <img
-              src="https://гарант-бетон.рф/image/cache/catalog/blog/beton-v-podolske-6-556x421.jpg"
-              alt="Бетон"
-              className="image-block__image"
-            />
+            <img src={betonImage} alt="Бетон" className="image-block__image" />
             <h4 className="image-block__title">Бетон</h4>
             <p className="image-block__description">
               Качественный бетон для создания прочного фундамента.
@@ -106,11 +109,7 @@ export function HomePage() {
         </div>
         <div className="image-row">
           <div className="image-block">
-            <img
-              src="https://www.stroyportal.ru/media/cache/companies/94321/products/689013491/15104881_image_large.jpg"
-              alt="Песок"
-              className="image-block__image"
-            />
+            <img src={pesokImage} alt="Песок" className="image-block__image" />
             <h4 className="image-block__title">Песок</h4>
             <p className="image-block__description">
               Высококачественный песок для строительных работ.
@@ -118,7 +117,7 @@ export function HomePage() {
           </div>
           <div className="image-block">
             <img
-              src="https://b-online.ru/wp-content/uploads/2020/09/121-2.jpg"
+              src={shebenImage}
               alt="Щебень"
               className="image-block__image"
             />
@@ -129,7 +128,7 @@ export function HomePage() {
           </div>
           <div className="image-block">
             <img
-              src="https://kraftmeleuz.ru/upload/iblock/4f8/08bzeivfkla2bsiztligk9staytfe4ji.jpg"
+              src={setkaImage}
               alt="Сетка кладочная"
               className="image-block__image"
             />
@@ -165,7 +164,7 @@ export function HomePage() {
             </div>
             <div className="respect-block">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/3456/3456469.png"
+                src={respectImage}
                 alt="respect"
                 className="respect-block__image"
               />

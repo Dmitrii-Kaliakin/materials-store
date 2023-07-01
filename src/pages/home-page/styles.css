@@ -25,13 +25,13 @@
 }
 
 .image-row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
 .image-block {
-  flex: 0 0 300px;
+  flex: 0 0 calc(33.33% - 20px);
   text-align: center;
   margin: 10px;
   display: flex;
@@ -61,22 +61,19 @@
 
 .content-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   width: 100%;
   max-width: 800px;
   margin-top: 20px;
 }
 
-.left-block {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.counter-block {
+  margin-top: 20px;
+  position: relative;
 }
 
-.left-block .counter-block {
+.left-block__counter-block {
   margin-top: 20px;
   position: relative;
 }
@@ -89,11 +86,13 @@
   top: -30px;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 999;
 }
 
 .star-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .star-icon {
@@ -114,67 +113,14 @@
   height: 200px;
 }
 
-.right-block {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .shop-section__description {
-    font-size: 14px;
-  }
-
-  .image-block {
-    flex: 0 0 45%;
-  }
-
-  .respect-block__image {
-    width: 150px;
-    height: 150px;
+@media (max-width: 1200px) {
+  .image-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 576px) {
-  .banner__heading {
-    font-size: 20px;
-  }
-
-  .banner__text {
-    font-size: 14px;
-  }
-
-  .shop-section__heading {
-    font-size: 20px;
-  }
-
-  .shop-section__description {
-    font-size: 12px;
-  }
-
-  .image-block {
-    flex: 0 0 90%;
-  }
-
-  .image-block__title {
-    font-size: 16px;
-  }
-
-  .image-block__description {
-    font-size: 12px;
-  }
-
-  .counter-block__title {
-    font-size: 20px;
-  }
-
-  .star-icon {
-    font-size: 25px;
-  }
-
-  .respect-block__image {
-    width: 100px;
-    height: 100px;
+@media (max-width: 992px) {
+  .image-row {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

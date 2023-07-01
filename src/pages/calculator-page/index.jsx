@@ -1,5 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { CustomButton } from "../../components/сustom-button";
 import "./styles.css";
@@ -34,6 +32,7 @@ export function CalculatorPage() {
           width="100%"
           height="1200vh"
           frameBorder="0"
+          title="stroy-calc"
         ></iframe>
       </div>
     </div>
