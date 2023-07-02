@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { Header } from "../header";
 import { Footer } from "../footer";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -26,6 +27,17 @@ export function App() {
   const location = useLocation();
   const backgroundLocation = location.state?.backgroundLocation;
   const initialPath = location.state?.initialPath;
+
+  useEffect(() => {
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      );
+
+    if (isMobile && document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen();
+    }
+  }, []);
 
   return (
     <StyledAppContainer>

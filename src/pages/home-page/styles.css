@@ -124,3 +124,14 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media (max-width: 767px) {
+  .banner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .shop-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

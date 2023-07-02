@@ -25,7 +25,7 @@ export function Footer() {
             </a>
             <a
               className="footer__icon-link"
-              href="https://t.me/Fiservic"
+              href="https://t.me/@Fiservic"
               target="_blank"
               rel="noopener noreferrer"
             >

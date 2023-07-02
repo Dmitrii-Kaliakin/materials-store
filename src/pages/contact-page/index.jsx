@@ -1,3 +1,4 @@
+import React from "react";
 import qrCodeImage from "./img/QR.png";
 import "./styles.css";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
@@ -5,6 +6,8 @@ import TelegramIcon from "@mui/icons-material/Telegram";
 import { CustomButton } from "../../components/сustom-button";
 import { Box } from "@mui/material";
 import { MapComponent } from "../../components/map";
+
+import gisImage from "./img/2GIS.png";
 
 export function ContactPage() {
   return (
@@ -76,6 +79,18 @@ export function ContactPage() {
         </div>
         <div className="contact-page__map-container">
           <MapComponent />
+        </div>
+        <div className="contact-page__gis-button-container">
+          <span className="contact-page__route-text">Построить маршрут:</span>
+          <a
+            href="https://2gis.ru/izhevsk/firm/70000001055788495"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-page__gis-button"
+          >
+            <img src={gisImage} alt="2GIS" className="contact-page__gis-icon" />
+            2GIS
+          </a>
         </div>
       </div>
     </div>
