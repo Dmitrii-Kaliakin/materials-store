@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.395e1939.css",
-    "main.js": "./static/js/main.636b67e4.js",
+    "main.js": "./static/js/main.5d1d64f4.js",
     "static/media/beton.jpg": "./static/media/beton.304373fbc2b4d438054f.jpg",
     "static/media/setka.jpg": "./static/media/setka.59cddd347ea03c17216b.jpg",
     "static/media/sheben.jpg": "./static/media/sheben.0b0c4ab451342ab4c2f4.jpg",
@@ -12,10 +12,10 @@
     "static/media/ic-notfound.svg": "./static/media/ic-notfound.2c252d16f18118d22833d1b995ba0234.svg",
     "index.html": "./index.html",
     "main.395e1939.css.map": "./static/css/main.395e1939.css.map",
-    "main.636b67e4.js.map": "./static/js/main.636b67e4.js.map"
+    "main.5d1d64f4.js.map": "./static/js/main.5d1d64f4.js.map"
   },
   "entrypoints": [
     "static/css/main.395e1939.css",
-    "static/js/main.636b67e4.js"
+    "static/js/main.5d1d64f4.js"
   ]
 }
